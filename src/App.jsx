@@ -405,7 +405,7 @@ export default function App() {
         <div style={{ position: "absolute", right: "6%", top: "50%", transform: "translateY(-50%)", opacity: 0.12 }} className="float">
           <img src={logoImg} alt="" style={{ width: 320, height: 320, objectFit: "contain" }} />
         </div>
-        <div style={{ position: "absolute", right: "25%", bottom: "25%", fontSize: "5rem", opacity: 0.05 }} className="float-delay">🌱</div>
+        {/* <div style={{ position: "absolute", right: "25%", bottom: "25%", fontSize: "5rem", opacity: 0.05 }} className="float-delay">🌱</div> */}
         <div style={{ position: "absolute", left: "5%", bottom: "30%", fontSize: "6rem", opacity: 0.04 }}>🍃</div>
 
         <div style={{ maxWidth: 1200, width: "100%", margin: "0 auto" }}>
@@ -814,8 +814,8 @@ export default function App() {
     position: "fixed",
     right: "24px",
     bottom: "24px",
-    width: "68px",
-    height: "68px",
+    width: "55px",
+    height: "55px",
     borderRadius: "50%",
     background: "#25D366",
     display: "flex",
