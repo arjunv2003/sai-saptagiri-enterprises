@@ -339,13 +339,13 @@ export default function App() {
           <img
             src={logoImg}
             alt="Sai Sapthagiri Enterprises Logo"
-            style={{ width: 52, height: 52, objectFit: "contain", filter: "drop-shadow(0 0 8px rgba(201,168,76,0.3))" }}
+            style={{ width: 65, height: 65, objectFit: "contain", filter: "drop-shadow(0 0 8px rgba(201,168,76,0.3))" }}
           />
           <div>
-            <div className="display-font" style={{ fontSize: "1.1rem", fontWeight: 600, lineHeight: 1.1, color: "#f0ede6" }}>
+            <div className="display-font" style={{ fontSize: "1.5rem", fontWeight: 600, lineHeight: 1.1, color: "#f0ede6" }}>
               Sai Sapthagiri
             </div>
-            <div style={{ fontSize: "0.62rem", letterSpacing: "0.2em", color: "#c9a84c", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>
+            <div style={{ fontSize: "0.8rem", letterSpacing: "0.2em", color: "#c9a84c", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>
               Enterprises
             </div>
           </div>
@@ -805,30 +805,54 @@ export default function App() {
         }
       `}</style>
       {/* WhatsApp Floating Button */}
-<a
-  href="https://wa.me/919676709969?text=Hi%20Sai%20Sapthagiri%20Enterprises,%20I%20would%20like%20to%20know%20more%20about%20your%20products."
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Chat on WhatsApp"
+<div
   style={{
     position: "fixed",
     right: "24px",
     bottom: "24px",
-    width: "55px",
-    height: "55px",
-    borderRadius: "50%",
-    background: "#25D366",
+    zIndex: 9999,
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
-    boxShadow: "0 10px 30px rgba(37, 211, 102, 0.45)",
-    zIndex: 9999,
-    textDecoration: "none",
-    animation: "whatsappPulse 2s infinite",
+    gap: "12px",
   }}
 >
-  <FaWhatsapp size={36} color="#fff" />
-</a>
+  <div
+    style={{
+      background: "#ffffff",
+      color: "#222",
+      padding: "10px 16px",
+      borderRadius: "30px",
+      fontSize: "0.85rem",
+      fontWeight: 500,
+      fontFamily: "'DM Sans', sans-serif",
+      boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
+      whiteSpace: "nowrap",
+    }}
+  >
+    Chat with us on WhatsApp
+  </div>
+
+  <a
+    href="https://wa.me/919676709969?text=Hi%20Sai%20Sapthagiri%20Enterprises,%20I%20would%20like%20to%20know%20more%20about%20your%20products."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+    style={{
+      width: "55px",
+      height: "55px",
+      borderRadius: "50%",
+      background: "#25D366",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      textDecoration: "none",
+      boxShadow: "0 10px 30px rgba(37, 211, 102, 0.45)",
+      animation: "whatsappPulse 2s infinite",
+    }}
+  >
+    <FaWhatsapp size={36} color="#fff" />
+  </a>
+</div>
 
 <style>{`
   @keyframes whatsappPulse {
@@ -843,6 +867,12 @@ export default function App() {
     100% {
       transform: scale(1);
       box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .whatsapp-label {
+      display: none;
     }
   }
 `}</style>
