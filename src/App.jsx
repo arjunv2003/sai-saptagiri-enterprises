@@ -406,7 +406,7 @@ export default function App() {
           <img src={logoImg} alt="" style={{ width: 320, height: 320, objectFit: "contain" }} />
         </div>
         {/* <div style={{ position: "absolute", right: "25%", bottom: "25%", fontSize: "5rem", opacity: 0.05 }} className="float-delay">🌱</div> */}
-        <div style={{ position: "absolute", left: "5%", bottom: "30%", fontSize: "6rem", opacity: 0.04 }}>🍃</div>
+        {/* <div style={{ position: "absolute", left: "5%", bottom: "30%", fontSize: "6rem", opacity: 0.04 }}>🍃</div> */}
 
         <div style={{ maxWidth: 1200, width: "100%", margin: "0 auto" }}>
           <div className="hero-text-1">
