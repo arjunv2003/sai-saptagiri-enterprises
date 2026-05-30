@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import logoImg from "./assets/saisapthagiri-logo.png"; // Place your logo as src/assets/saisapthagiri-logo.png
-
+import { FaWhatsapp } from "react-icons/fa";
 const NAV_LINKS = ["Home", "About", "Products", "Why Us", "Contact"];
 
 const PRODUCTS = [
@@ -804,6 +804,49 @@ export default function App() {
           .cta-band { padding-left: 24px !important; padding-right: 24px !important; }
         }
       `}</style>
+      {/* WhatsApp Floating Button */}
+<a
+  href="https://wa.me/919676709969?text=Hi%20Sai%20Sapthagiri%20Enterprises,%20I%20would%20like%20to%20know%20more%20about%20your%20products."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp"
+  style={{
+    position: "fixed",
+    right: "24px",
+    bottom: "24px",
+    width: "68px",
+    height: "68px",
+    borderRadius: "50%",
+    background: "#25D366",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    boxShadow: "0 10px 30px rgba(37, 211, 102, 0.45)",
+    zIndex: 9999,
+    textDecoration: "none",
+    animation: "whatsappPulse 2s infinite",
+  }}
+>
+  <FaWhatsapp size={36} color="#fff" />
+</a>
+
+<style>{`
+  @keyframes whatsappPulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+  }
+`}</style>
     </div>
+    
   );
 }
