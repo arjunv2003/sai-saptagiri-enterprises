@@ -1033,7 +1033,7 @@ export default function App() {
 
             {/* Contact Form */}
             <div>
-              <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              {/* <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
                   <input className="contact-field" placeholder="Your Name" type="text" />
                   <input className="contact-field" placeholder="Phone Number" type="tel" />
@@ -1052,9 +1052,170 @@ export default function App() {
                 <button className="btn-primary" style={{ width: "100%", padding: "16px" }}>
                   <span>Send Inquiry →</span>
                 </button>
-              </div>
+              </div> */}
+{/* Contact Form */}
+<div>
+  <form
+    action="https://formsubmit.co/vijay@saisapthagiri.co.in"
+    method="POST"
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: 14,
+      margin: 0,
+      padding: 0,
+      width: "100%",
+    }}
+  >
+    {/* FormSubmit settings */}
+    <input
+      type="hidden"
+      name="_subject"
+      value="New enquiry from Sai Sapthagiri website"
+    />
 
-              <div style={{
+    <input type="hidden" name="_template" value="table" />
+
+    <input type="hidden" name="_captcha" value="false" />
+
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+        gap: 14,
+      }}
+    >
+      <input
+        className="contact-field"
+        placeholder="Your Name"
+        type="text"
+        name="Name"
+        required
+      />
+
+      <input
+        className="contact-field"
+        placeholder="Phone Number"
+        type="tel"
+        name="Phone"
+        required
+      />
+    </div>
+
+    <input
+      className="contact-field"
+      placeholder="Email Address"
+      type="email"
+      name="Email"
+      required
+    />
+
+    <select
+      className="contact-field"
+      name="Product Interest"
+      defaultValue=""
+      required
+      style={{ cursor: "pointer" }}
+    >
+      <option
+        value=""
+        disabled
+        style={{ background: "#0d1a0f" }}
+      >
+        Product Interest
+      </option>
+
+      <option
+        value="High EC Coir Pith"
+        style={{ background: "#0d1a0f" }}
+      >
+        High EC Coir Pith
+      </option>
+
+      <option
+        value="Low EC Coir Pith"
+        style={{ background: "#0d1a0f" }}
+      >
+        Low EC Coir Pith
+      </option>
+
+      <option
+        value="Seedling Trays"
+        style={{ background: "#0d1a0f" }}
+      >
+        Seedling Trays
+      </option>
+
+      <option
+        value="Shade Nets"
+        style={{ background: "#0d1a0f" }}
+      >
+        Shade Nets
+      </option>
+
+      <option
+        value="LD Covers"
+        style={{ background: "#0d1a0f" }}
+      >
+        LD Covers
+      </option>
+
+      <option
+        value="General Inquiry"
+        style={{ background: "#0d1a0f" }}
+      >
+        General Inquiry
+      </option>
+    </select>
+
+    <textarea
+      className="contact-field"
+      rows={5}
+      name="Message"
+      placeholder="Tell us about your requirements..."
+      required
+      style={{ resize: "vertical" }}
+    />
+
+    <button
+      type="submit"
+      className="btn-primary"
+      style={{
+        width: "100%",
+        padding: "16px",
+      }}
+    >
+      <span>Send Inquiry →</span>
+    </button>
+  </form>
+
+  <div
+    style={{
+      marginTop: 32,
+      padding: "20px 24px",
+      background: "rgba(201,168,76,0.06)",
+      border: "1px solid rgba(201,168,76,0.2)",
+    }}
+  >
+    <div
+      style={{
+        fontSize: "0.8rem",
+        color: "rgba(240,237,230,0.5)",
+        fontFamily: "'DM Sans', sans-serif",
+        lineHeight: 1.7,
+      }}
+    >
+      💬{" "}
+      <strong style={{ color: "#c9a84c" }}>
+        Quick Response Guarantee
+      </strong>
+      <br />
+      Our team typically responds within 4 business hours. For urgent
+      inquiries, call us directly.
+    </div>
+  </div>
+</div>
+              {/* <div style={{
                 marginTop: 32, padding: "20px 24px",
                 background: "rgba(201,168,76,0.06)",
                 border: "1px solid rgba(201,168,76,0.2)",
@@ -1063,7 +1224,7 @@ export default function App() {
                   💬 <strong style={{ color: "#c9a84c" }}>Quick Response Guarantee</strong><br />
                   Our team typically responds within 4 business hours. For urgent inquiries, call us directly.
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
