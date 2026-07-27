@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import logoImg from "./assets/saisapthagiri-logo.png"; // Place your logo as src/assets/saisapthagiri-logo.png
 import { FaWhatsapp } from "react-icons/fa";
+import founderImg from "./assets/founder.jpeg";
 const NAV_LINKS = ["Home", "About", "Products", "Why Us", "Contact"];
 
 const PRODUCTS = [
@@ -521,7 +522,338 @@ export default function App() {
           </div>
         </div>
       </section>
+{/* FOUNDER */}
+<section
+  id="founder"
+  style={{
+    padding: "120px 48px",
+    background:
+      "radial-gradient(circle at 85% 20%, rgba(201,168,76,0.08), transparent 35%), linear-gradient(145deg, #0d1a0f 0%, #081208 100%)",
+    position: "relative",
+    overflow: "hidden",
+  }}
+>
+  {/* Decorative background */}
+  <div
+    style={{
+      position: "absolute",
+      width: 420,
+      height: 420,
+      borderRadius: "50%",
+      background: "rgba(34,85,34,0.12)",
+      filter: "blur(20px)",
+      top: -180,
+      right: -140,
+      pointerEvents: "none",
+    }}
+  />
 
+  <div
+    style={{
+      maxWidth: 1200,
+      margin: "0 auto",
+      position: "relative",
+      zIndex: 1,
+    }}
+  >
+    <div
+      className="founder-grid"
+      style={{
+        display: "grid",
+        gridTemplateColumns: "minmax(300px, 0.9fr) minmax(380px, 1.1fr)",
+        gap: 90,
+        alignItems: "center",
+      }}
+    >
+      {/* Founder image */}
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          maxWidth: 470,
+          margin: "0 auto",
+        }}
+      >
+        {/* Top-left gold corner */}
+        <div
+          style={{
+            position: "absolute",
+            top: -18,
+            left: -18,
+            width: 90,
+            height: 90,
+            borderTop: "2px solid #c9a84c",
+            borderLeft: "2px solid #c9a84c",
+            zIndex: 2,
+          }}
+        />
+
+        {/* Bottom-right gold corner */}
+        <div
+          style={{
+            position: "absolute",
+            right: -18,
+            bottom: -18,
+            width: 90,
+            height: 90,
+            borderRight: "2px solid #c9a84c",
+            borderBottom: "2px solid #c9a84c",
+            zIndex: 2,
+          }}
+        />
+
+        <div
+          style={{
+            padding: 14,
+            border: "1px solid rgba(201,168,76,0.35)",
+            background:
+              "linear-gradient(145deg, rgba(201,168,76,0.12), rgba(34,85,34,0.18))",
+            boxShadow: "0 30px 70px rgba(0,0,0,0.35)",
+          }}
+        >
+          <div style={{ overflow: "hidden" }}>
+            <img
+              src={founderImg}
+              alt="Founder of Sai Sapthagiri Enterprises"
+              style={{
+                width: "100%",
+                height: 560,
+                display: "block",
+                objectFit: "cover",
+                objectPosition: "center top",
+                filter: "saturate(0.9) contrast(1.04)",
+              }}
+            />
+          </div>
+        </div>
+
+        {/* Experience badge */}
+        <div
+          className="founder-badge"
+          style={{
+            position: "absolute",
+            right: -38,
+            bottom: 52,
+            minWidth: 155,
+            padding: "20px 24px",
+            background: "linear-gradient(135deg, #c9a84c, #a8732a)",
+            color: "#0a1508",
+            textAlign: "center",
+            boxShadow: "0 18px 45px rgba(0,0,0,0.4)",
+            zIndex: 3,
+          }}
+        >
+          <div
+            className="display-font"
+            style={{
+              fontSize: "2.5rem",
+              lineHeight: 1,
+              fontWeight: 700,
+            }}
+          >
+            17+
+          </div>
+
+          <div
+            style={{
+              marginTop: 7,
+              fontSize: "0.67rem",
+              lineHeight: 1.4,
+              fontWeight: 600,
+              letterSpacing: "0.14em",
+              textTransform: "uppercase",
+              fontFamily: "'DM Sans', sans-serif",
+            }}
+          >
+            Years of
+            <br />
+            Experience
+          </div>
+        </div>
+      </div>
+
+      {/* Founder content */}
+      <div>
+        <span className="section-tag">Meet Our Founder</span>
+
+        <div className="divider" />
+
+        <h2
+          className="display-font"
+          style={{
+            fontSize: "clamp(2.4rem, 4.5vw, 4rem)",
+            fontWeight: 400,
+            lineHeight: 1.12,
+            marginBottom: 26,
+          }}
+        >
+          A Vision Rooted in
+          <br />
+          <em
+            style={{
+              color: "#c9a84c",
+              fontWeight: 400,
+            }}
+          >
+            Agriculture
+          </em>
+        </h2>
+
+        <p
+          style={{
+            fontSize: "0.97rem",
+            lineHeight: 1.9,
+            color: "rgba(240,237,230,0.65)",
+            fontFamily: "'DM Sans', sans-serif",
+            fontWeight: 300,
+            marginBottom: 20,
+          }}
+        >
+          Founded with a deep understanding of agriculture and the challenges
+          faced by growers, Sai Sapthagiri Enterprises was established to
+          provide dependable, high-quality solutions for modern cultivation.
+        </p>
+
+        <p
+          style={{
+            fontSize: "0.97rem",
+            lineHeight: 1.9,
+            color: "rgba(240,237,230,0.65)",
+            fontFamily: "'DM Sans', sans-serif",
+            fontWeight: 300,
+            marginBottom: 34,
+          }}
+        >
+          Through years of dedication, field experience and a commitment to
+          quality, our founder has guided the company from a local agricultural
+          enterprise into a trusted partner for growers across South India.
+        </p>
+
+        {/* Founder quote */}
+        <div
+          style={{
+            position: "relative",
+            padding: "28px 30px 28px 34px",
+            background: "rgba(201,168,76,0.055)",
+            borderLeft: "2px solid #c9a84c",
+            marginBottom: 34,
+          }}
+        >
+          <div
+            className="display-font"
+            style={{
+              position: "absolute",
+              top: -8,
+              left: 18,
+              fontSize: "4.5rem",
+              lineHeight: 1,
+              color: "rgba(201,168,76,0.18)",
+            }}
+          >
+            “
+          </div>
+
+          <p
+            className="display-font"
+            style={{
+              position: "relative",
+              zIndex: 1,
+              fontSize: "1.25rem",
+              lineHeight: 1.65,
+              fontStyle: "italic",
+              color: "rgba(240,237,230,0.82)",
+            }}
+          >
+            Our goal has always been simple — provide growers with products
+            they can trust, season after season.
+          </p>
+        </div>
+
+        {/* Founder name */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 18,
+          }}
+        >
+          <div
+            style={{
+              width: 42,
+              height: 1,
+              background: "#c9a84c",
+              flexShrink: 0,
+            }}
+          />
+
+          <div>
+            <h3
+              className="display-font"
+              style={{
+                fontSize: "1.8rem",
+                fontWeight: 600,
+                color: "#f0ede6",
+                marginBottom: 3,
+              }}
+            >
+              Mr. Anjinappa
+            </h3>
+
+            <p
+              style={{
+                fontSize: "0.7rem",
+                color: "#c9a84c",
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                fontFamily: "'DM Sans', sans-serif",
+              }}
+            >
+              Founder & Managing Director
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Responsive styles only for changing inline layout */}
+  <style>{`
+    @media (max-width: 900px) {
+      .founder-grid {
+        grid-template-columns: 1fr !important;
+        gap: 70px !important;
+      }
+
+      .founder-badge {
+        right: 18px !important;
+        bottom: -28px !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #founder {
+        padding-top: 90px !important;
+        padding-bottom: 90px !important;
+      }
+
+      #founder img {
+        height: 460px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #founder img {
+        height: 390px !important;
+      }
+
+      .founder-badge {
+        min-width: 130px !important;
+        padding: 16px 18px !important;
+        right: 10px !important;
+      }
+    }
+  `}</style>
+</section>
       {/* PRODUCTS */}
       <section id="products" style={{ padding: "120px 48px", background: "#0d1a0f" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
